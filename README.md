@@ -1,6 +1,6 @@
-# particletk/box
+# particletk/create
 
-A wrapper for a mutex and a smart pointer for thread-safe data manipulation. 
+A helper for constructing smart pointers of various types.
 
 ## Install
 
