@@ -12,13 +12,13 @@ A helper for constructing smart pointers of various types.
 PPM_PACKAGE(p) {
   // ...
 
-  PPM::GitHubPtr ptk_box = p->github_repo("particletk", "create");
+  PPM::GitHubPtr ptk_create = p->github_repo("particletk", "create");
 
   // ...
 
   target->cpp_flags(flagcat({
     // ...
-    ("-I" + ptk_box->dir()),
+    ("-I" + ptk_create->dir()),
     // ...
   }));
 
