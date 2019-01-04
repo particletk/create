@@ -1,0 +1,19 @@
+name: particletk-create
+version: 0.1.4
+description: "A helper for constructing smart pointers of various types."
+
+git-repo: "https://github.com/particletk/create/"
+git-tag: "v0.1.4"
+
+targets:
+  particletk-create:
+    type: library
+    include-dirs:
+      - "."
+  particletk-create-demo:
+    type: executable
+    sources:
+      - demo.cpp
+    cpp: "c++11"
+    link:
+      - particletk-create/particletk-create

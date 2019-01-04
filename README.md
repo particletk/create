@@ -2,30 +2,9 @@
 
 A helper for constructing smart pointers of various types.
 
-## Install
+## dumbcpm
 
-```cpp
-#include <particlepm.hpp>
-
-// ...
-
-PPM_PACKAGE(p) {
-  // ...
-
-  PPM::GitHubPtr ptk_create = p->github_repo("particletk", "create");
-
-  // ...
-
-  target->cpp_flags(flagcat({
-    // ...
-    ("-I" + ptk_create->dir()),
-    // ...
-  }));
-
-  // ...
-}
-
-```
+This package is available in dumbcpm under the `particletk-create` name. Library target has the same name.
 
 ## Usage
 
